@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.dsc.muhghazaliakbar.tugas1dsc.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/main_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="Twitter logo"
+            android:src="@drawable/ic_twitter_logo"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/main_logo"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umar Fadil"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/head_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chief Executive Officer"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:paddingTop="7dp"/>
+
+            <TextView
+                android:id="@+id/contact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+62 8511 037 4321"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:paddingTop="7dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/contact_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="umarfadil.skom@gmail.com"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:paddingTop="7dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/footer_project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aluf Studio Project"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerVertical="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/footer_project_address"/>
+    <TextView
+        android:id="@+id/footer_project_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jl. Klampis Anom Blok VIII, No. F150, Surabaya"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerVertical="true"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
+</RelativeLayout>
